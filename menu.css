@@ -3,3 +3,14 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.menukort {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%; /* valgfrit: gør det responsivt */
+  width: 650px;
+  height: auto; /* valgfrit: bevarer proportioner */
+}
+.center {
+  text-align: center;
+}
