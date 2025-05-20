@@ -1,5 +1,136 @@
+/* RESET */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* HERO */
+.hero {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.hero-video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.knap-forside {
+  position: absolute;
+  transform: translateX(-50%);
+  bottom: 10px;
+  left: 50%;
+  text-decoration: none;
+  background-color: rgba(152, 186, 195, 0.85);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 12px;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+}
+.knap-forside:hover {
+  background: #85a2a9;
+}
+
+/* INFO - MOBIL DEFAULT */
+.info {
+  padding: 20px;
+  text-align: center;
+}
+
+.info-image img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.description {
+  font-size: 14px;
+  margin-bottom: 20px;
+  line-height: 25px;
+}
+
+.hours p {
+  font-size: 14px;
+  margin-bottom: 10px;
+  line-height: 25px;
+}
+.section-title {
+  font-size: 30px;
+  color: #603813;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-weight: 300;
+}
+
+/* DESKTOP MEDIEQUERY – max-width: 800px viser MOBIL, så her er DESKTOP når skærmen er STØRRE */
+@media (min-width: 801px) {
+  .knap-forside {
+    bottom: 150px;
+    font-size: 16px;
+    padding: 14px 30px;
+  }
+  .section-title {
+    display: none; /* Skjul h2 i mobilplacering */
+  }
+  .info {
+    padding: 100px 100px;
+    text-align: left;
+  }
+  .info-text::before {
+    content: "KOM INDENFOR";
+    display: block;
+    font-size: 40px;
+    color: #603813;
+    margin-bottom: 50px;
+    font-weight: 300;
+    text-align: center;
+  }
+
+  .info-wrapper {
+    display: flex;
+    gap: 60px;
+    align-items: flex-start;
+  }
+
+  .info-image {
+    flex: 1;
+  }
+
+  .info-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .info-text {
+    flex: 1;
+  }
+
+  .description {
+    font-size: 20px;
+    margin-bottom: 30px;
+    line-height: 35px;
+    text-align: center;
+  }
+
+  .hours p {
+    font-size: 25px;
+    line-height: 40px;
+    text-align: center;
+    margin-top: 20px;
+  }
 }
