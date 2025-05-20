@@ -3,3 +3,146 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  background-color: #dceaed;
+  color: #000000;
+  line-height: 1.8;
+}
+
+h1,
+h2 {
+  color: #603813;
+  margin-bottom: 20px;
+  font-weight: 300;
+  font-size: 30px;
+}
+
+.contact-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 60px 40px;
+  gap: 60px;
+  background-color: #e2ebed;
+}
+
+.info {
+  flex: 1;
+  font-size: 18px;
+}
+
+.info p {
+  margin-bottom: 20px;
+}
+
+.map {
+  flex: 1;
+}
+
+.map iframe {
+  width: 100%;
+  aspect-ratio: 1 / 1; /* Gør kortet kvadratisk på desktop */
+  border-radius: 8px;
+  display: block;
+  border: none;
+  max-height: 500px;
+}
+
+.message-section {
+  background-color: #fff;
+  text-align: center;
+  padding: 40px 20px;
+  width: 100%;
+  position: fixed; /* Fikseret i bunden på desktop */
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.message-section h2 {
+  margin-bottom: 30px;
+  font-size: 28px;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 14px 18px;
+  font-size: 16px;
+  border: none;
+  background-color: #f7f7f7;
+  border-radius: 4px 0 0 4px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+button {
+  background-color: #fefae0;
+  border: none;
+  padding: 14px 24px;
+  font-size: 16px;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Tilføj plads i bunden så indhold ikke dækkes */
+main {
+  padding-bottom: 200px;
+}
+
+/* media query til mobil */
+@media (max-width: 800px) {
+  .contact-section {
+    flex-direction: column;
+    padding: 30px 20px;
+  }
+
+  .info,
+  .map {
+    width: 100%;
+  }
+
+  .info p {
+    margin-bottom: 16px;
+  }
+
+  .map iframe {
+    height: 400px;
+    aspect-ratio: auto; /* Tilbage til normal højde på mobil */
+  }
+
+  form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  input[type="text"] {
+    border-radius: 4px 4px 0 0;
+  }
+
+  button {
+    border-radius: 0 0 4px 4px;
+  }
+
+  .message-section {
+    position: static; /* Ikke fixed på mobil */
+    padding: 60px 20px;
+    box-shadow: none;
+  }
+
+  main {
+    padding-bottom: 0; /* Fjern ekstra plads i bunden på mobil */
+  }
+}
