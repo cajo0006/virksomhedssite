@@ -3,3 +3,244 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  margin: 0;
+  background-color: white;
+  color: #333;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.section {
+  padding: 2rem 1.5rem;
+  margin: 0 auto;
+}
+
+.subtitle {
+  color: #603813;
+  font-weight: 300;
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.title2 {
+  font-size: 30px;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.text {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.hero-image {
+  display: block;
+  width: 200%;
+  margin: 1.5rem auto;
+  max-width: 500px;
+}
+.filosofi {
+  background-color: #dceaed;
+  padding: 2rem 1rem;
+}
+
+.filosofi .title {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-weight: 300;
+  font-size: 30px;
+}
+
+.filosofi .text {
+  max-width: 500px;
+  margin: 0 auto 1rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.filosofi img {
+  display: block;
+  max-width: 90%;
+  margin: 2rem auto 0;
+  border-radius: 8px;
+}
+/*************************BOKSE****************/
+.testimonials {
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+  background-color: white;
+}
+
+.testimonials .title {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.testimonial {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.testimonial h3 {
+  margin-bottom: 0.25rem;
+  font-size: 1.2rem;
+}
+
+.testimonial .age {
+  font-size: 0.9rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.quote-box {
+  background: white;
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 0 auto;
+  max-width: 300px;
+  font-style: italic;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/************* Farverne på de tre bokse ********/
+.light-blue {
+  background-color: #fffef8;
+}
+
+.beige {
+  background-color: #fffdec;
+}
+
+.yellow {
+  background-color: #fdf9d0;
+}
+/***************BILLEDE MED LOGO********/
+.billede-wrapper {
+  background-color: white;
+  max-width: 400px;
+  margin: 2rem auto;
+  padding: 1rem;
+  position: relative;
+  border-radius: 8px;
+}
+
+.kaffebillede {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 4px;
+}
+
+.hjørnelogo {
+  position: absolute;
+  top: -35px;
+  left: 5px;
+  width: 100px;
+}
+.om-os-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+/* Kun for større skærme */
+@media screen and (min-width: 768px) {
+  .om-os-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .om-text,
+  .om-billede {
+    width: 48%;
+  }
+
+  .om-text {
+    text-align: left;
+  }
+
+  .hero-image {
+    width: 120%;
+    height: auto;
+    margin: 0;
+  }
+}
+/* Layout til desktop */
+@media (min-width: 800px) {
+  .section.about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    gap: 2rem;
+  }
+
+  .section.about .text-wrapper {
+    flex: 1;
+  }
+
+  .section.about .hero-image {
+    flex: 1;
+    max-width: 500px;
+  }
+
+  .section.filosofi {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    gap: 2rem;
+    background-color: #e6f0f3;
+    padding: 3rem 1.5rem;
+  }
+
+  .section.filosofi .billede-wrapper {
+    flex: 1;
+    margin: 0;
+  }
+
+  .section.filosofi .text-wrapper {
+    flex: 1;
+    text-align: left;
+  }
+
+  .filosofi .text-wrapper .title {
+    text-align: left;
+  }
+
+  .testimonial-container {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .testimonial {
+    flex: 1;
+    border-radius: 8px;
+    padding: 2rem;
+  }
+
+  .testimonials .title {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+}
