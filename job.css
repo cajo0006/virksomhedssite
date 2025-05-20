@@ -3,3 +3,80 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  font-family: "Inter", sans-serif;
+  background: #e2edf3;
+  color: #4b2e1e;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+main {
+  padding: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 24px;
+  margin: 10px 0 30px;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+}
+
+.job-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.grid-1-1 {
+  background: #fefae0;
+  /* border-radius: 8px; */
+  overflow: hidden;
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.grid-1-1 img {
+  width: 100%;
+  height: auto;
+  display: block;
+  padding: 10px;
+}
+
+.grid-1-1:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+.grid-1-1 h2 {
+  font-size: 25px;
+  margin: 10px;
+}
+
+.grid-1-1 p {
+  font-size: 14px;
+  padding: 0 15px 15px;
+}
+
+/* DESKTOP: 2 kolonner ved skærme over 800px */
+@media (min-width: 800px) {
+  .job-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+
+  h1 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    margin-top: 20px;
+  }
+}
