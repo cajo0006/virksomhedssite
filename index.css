@@ -133,4 +133,9 @@ body {
     text-align: center;
     margin-top: 20px;
   }
+
+  .knap-forside {
+    padding: 20px 30px;
+    font-size: 20px;
+  }
 }
