@@ -58,9 +58,7 @@ h2 {
   text-align: center;
   padding: 40px 20px;
   width: 100%;
-  position: fixed; /* Fikseret i bunden på desktop */
-  bottom: 0;
-  left: 0;
+  margin-top: 70px;
   z-index: 1000;
   box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
 }
@@ -95,11 +93,6 @@ button {
   border-radius: 0 4px 4px 0;
   cursor: pointer;
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
-}
-
-/* Tilføj plads i bunden så indhold ikke dækkes */
-main {
-  padding-bottom: 200px;
 }
 
 /* media query til mobil */
