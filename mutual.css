@@ -60,7 +60,7 @@ nav {
 }
 
 .menu a:hover {
-  color: #603813;
+  color: #9abbc3;
 }
 
 .burger {
@@ -106,7 +106,7 @@ nav {
     display: block;
     background-color: #ffffff;
     position: absolute;
-    top: 94px;
+    top: 62px;
     left: 0;
     width: 100%;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
@@ -149,5 +149,5 @@ nav {
 }
 
 .footer-right a:hover {
-  color: #603813;
+  color: #9abbc3;
 }
